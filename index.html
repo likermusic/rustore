@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RuStore::APP</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <img src="logo.webp" width="20">
+            <b>RuStore</b>
+        </div>
+        <hr>
+        <div>
+            <img src="aliexpress.webp" width="20">
+            <a href="https://aliexpress.ru/">Алиэкспресс</a>
+            <button onclick="download(this)">Установить</button>
+            <br>
+            <img src="vk.png" width="20">
+            <a href="http://vk.com/">ВКонтакте</a>
+            <button onclick="download(this)">Установить</button>
+            <br>
+            <img src="samokat.jpeg" width="20">
+            <a href="https://samokat.ru/">Самокат-доставка</a>
+            <button onclick="download(this)">Установить</button>
+        </div>
+        <hr>
+        <marquee> &copy; Официальный русскоязычный интернет-магазин приложений. Все права защищены </marquee>
+
+        <script>
+            function download(button) {
+                button.textContent = 'Устанавливается...';
+                setTimeout( function() {
+                    button.textContent = 'Установлено!';
+                }, 3000 );
+            }
+        </script>
+    </body>
+
+</html>
